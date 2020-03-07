@@ -4,9 +4,9 @@
 </head>
 <script>
 let options = {
-host: 'my-mqtt-broker.herokuapp.com',
-port: 443,
-protocol: 'wss'
+host: 'localhost',
+port: 8081,
+protocol: 'ws'
 };
 let client = mqtt.connect(options)
 client.on('connect', () => {
